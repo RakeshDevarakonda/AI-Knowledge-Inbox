@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug FastAPI Backend",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "ai_knowledge_inbox.main:app",
+        "--app-dir",
+        "src",
+        "--reload",
+        "--port",
+        "8000"
+      ],
+      "python": "${workspaceFolder}/Backend/.venv/Scripts/python.exe",
+      "cwd": "${workspaceFolder}/Backend",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/Backend/src"
+      },
+      "jinja": true,
+      "justMyCode": true
+    }
+  ]
+}
